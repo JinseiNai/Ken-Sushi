@@ -1,0 +1,21 @@
+p {
+    margin-bottom: 0;
+}
+
+.item-name {
+    font-size: 0.75em;
+}
+
+.item-description {
+    font-size: 0.5em;
+}
+
+.space {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sushi-menu {
+    display: inline-block;
+    font-size: 0.5em;
+}

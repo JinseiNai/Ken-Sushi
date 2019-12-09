@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 class Starters extends React.Component {
     constructor(props) {
@@ -25,19 +26,20 @@ class Starters extends React.Component {
             }, {
                 name: "Clam Miso Soup",
                 price: 6
-            }
-            ]
+            }]
         }
     }
+
     render() {
         return (
             <div>
-                <h4>Starters</h4>
+                <p>STARTERS</p>
+                <h5>Salad &amp; Soups</h5>
                 {this.state.starters.map(item => (
-                <>
-                <p>{item.name}   {item.price}</p>
-                <i>{item.description}</i>
-                </>
+                    <>
+                    <p className="item-name">{item.name} <span className="space">&nbsp;</span> {item.price}</p>
+                    <i className="item-description">{item.description}</i>
+                    </>
                 ))}
             </div>
         )
