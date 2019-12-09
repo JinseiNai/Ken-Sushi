@@ -1,15 +1,5 @@
 import React from 'react';
 
-// function getItem() {
-//     for (i = 0; i < starters.length; i++) {
-//         let div = $('<div>');
-//         let name = $('<h3></h3>').text(starters[i].name);
-//         let description = $('<i></i>').text(starters[i].description);
-//         let price = $('<p></p>').text(starters[i].price);
-//         div.append(name + description + price);
-//     }
-// }
-
 class Starters extends React.Component {
     constructor(props) {
         super(props);
@@ -26,6 +16,15 @@ class Starters extends React.Component {
                 name: "Hiyashi Wakame",
                 description: "seaweed salad in  sesame vinaigrette",
                 price: 8
+            }, {
+                name: "Miso Soup",
+                price: 2
+            }, {
+                name: "Red Miso Soup",
+                price: 4
+            }, {
+                name: "Clam Miso Soup",
+                price: 6
             }
             ]
         }
@@ -33,9 +32,10 @@ class Starters extends React.Component {
     render() {
         return (
             <div>
+                <h4>Starters</h4>
                 {this.state.starters.map(item => (
                 <>
-                <p>{item.name} {item.price}</p>
+                <p>{item.name}   {item.price}</p>
                 <i>{item.description}</i>
                 </>
                 ))}
