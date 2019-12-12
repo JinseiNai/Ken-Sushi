@@ -1,0 +1,29 @@
+
+/* ---------------- */
+
+.left, 
+.right {
+    display: inline-block;
+    width: 50%;
+}
+
+.hours {
+    margin: 5px;
+}
+
+.hours-title {
+    margin-bottom: 5px;
+}
+
+.address-block {
+    height: 100px;
+}
+
+.address {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.telephone-block {
+    height: 100px
+}

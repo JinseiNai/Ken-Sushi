@@ -33,7 +33,7 @@ class Starters extends React.Component {
     render() {
         return (
             <div>
-                <p>STARTERS</p>
+                {/* <p>STARTERS</p> */}
                 <h5>Salad &amp; Soups</h5>
                 {this.state.starters.map(item => (
                     <>
