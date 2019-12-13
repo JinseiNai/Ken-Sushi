@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles';
+import './styles.css';
 
 class Sushi extends React.Component {
     constructor(props) {

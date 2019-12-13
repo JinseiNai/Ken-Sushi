@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles';
+import './styles.css';
 
 class Sashimi extends React.Component {
     constructor(props) {

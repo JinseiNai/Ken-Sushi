@@ -5,6 +5,7 @@ import Homepage from './components/homepage/homepage';
 import StartersPage from './components/menu/pages/starters';
 import EntreesPage from './components/menu/pages/entrees';
 import RollsPage from './components/menu/pages/rolls';
+import SushiList from './components/menu/pages/sushi-list';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,32 +21,33 @@ class App extends React.Component {
         <Switch>
           <div className="App App-header">
             <div className="banner">
-              <Link to="/">
-                <div className="title">
+              <div className="title">
+                <Link to="/">
                   <h1>Ken Sushi Workshop</h1>
-                  <div className="nav">
-                    <Link to="/starters">
-                      <button>Starters</button>
-                    </Link>
-                    <Link to="/entrees">
-                      <button>Entrees</button>
-                    </Link>
-                    <Link to="Rolls">
-                      <button>Rolls</button>
-                    </Link>
-                    <Link to="Sushi">
-                      <button>Sushi</button>
-                    </Link>
-                  </div>
+                </Link>
+                <div className="nav">
+                  <Link to="/starters">
+                    <button>Starters</button>
+                  </Link>
+                  <Link to="/entrees">
+                    <button>Entrees</button>
+                  </Link>
+                  <Link to="/rolls">
+                    <button>Rolls</button>
+                  </Link>
+                  <Link to="/sushi">
+                    <button>Sushi</button>
+                  </Link>
                 </div>
-              </Link>
-
-                
+              </div>
             </div>
-            <Route exact path="/" component={Homepage} />
-            <Route path="/starters" component={StartersPage} />
-            <Route path="/entrees" component={EntreesPage} />
-            <Route path="/rolls" component={RollsPage} />
+            <div className="content">
+              <Route exact path="/" component={Homepage} />
+              <Route path="/starters" component={StartersPage} />
+              <Route path="/entrees" component={EntreesPage} />
+              <Route path="/rolls" component={RollsPage} />
+              <Route path="/sushi" component={SushiList} />
+            </div>
           </div>
         </Switch>
       </Router>

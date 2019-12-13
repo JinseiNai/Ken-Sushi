@@ -23,7 +23,7 @@ class Omakase extends React.Component {
                 {this.state.omakase.map(item => (
                     <>
                     <p className="item-name">{item.name} <span className="space">&nbsp;</span> {item.price}</p>
-                    <i className="item-description">{item.price}</i>
+                    {/* <i className="item-description">{item.price}</i> */}
                     </>
                 ))}
             </div>

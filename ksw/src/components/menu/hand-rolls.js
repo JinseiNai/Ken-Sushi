@@ -58,7 +58,7 @@ class HandRolls extends React.Component {
         return (
             <div>
                 <h6>HAND ROLLS</h6>
-                {this.state.map(item => (
+                {this.state.rolls.map(item => (
                     <div className="sushi-menu">
                         <p className="left">{item.name}</p>
                         <p className="right">{item.price}</p>
