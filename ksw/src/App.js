@@ -12,6 +12,9 @@ class App extends React.Component {
     super(props);
     this.state = {
 
+    // openNav() {
+    //   document.getElementById("nav").style.display = "block";
+    // }
     }
   }
 
@@ -25,19 +28,21 @@ class App extends React.Component {
                 <Link to="/">
                   <h1>Ken Sushi Workshop</h1>
                 </Link>
-                <div className="nav">
-                  <Link to="/starters">
-                    <button>Starters</button>
-                  </Link>
-                  <Link to="/entrees">
-                    <button>Entrees</button>
-                  </Link>
-                  <Link to="/rolls">
-                    <button>Rolls</button>
-                  </Link>
-                  <Link to="/sushi">
-                    <button>Sushi</button>
-                  </Link>
+              </div>
+              <div onMouseOver={this.openNav} className="hoverNav">
+                <div className="nav" id="nav">
+                    <Link to="/starters">
+                      <button>Starters</button>
+                    </Link>
+                    <Link to="/entrees">
+                      <button>Entrees</button>
+                    </Link>
+                    <Link to="/rolls">
+                      <button>Rolls</button>
+                    </Link>
+                    <Link to="/sushi">
+                      <button>Sushi</button>
+                    </Link>
                 </div>
               </div>
             </div>

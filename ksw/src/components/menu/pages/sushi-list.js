@@ -21,19 +21,19 @@ class SushiList extends React.Component {
                     <div className="container">
                         <div>
                             <Link to="/sushi">
-                                <button>Sushi</button>
+                                <button className="subNav">Sushi</button>
                             </Link>
                             <Link to="/sashimi">
-                                <button>Sashimi</button>
+                                <button className="subNav">Sashimi</button>
                             </Link>
                             <Link to="/cut-rolls">
-                                <button>Cut Rolls</button>
+                                <button className="subNav">Cut Rolls</button>
                             </Link>
                             <Link to="/small-rolls">
-                                <button>Small Rolls</button>
+                                <button className="subNav">Small Rolls</button>
                             </Link>
                             <Link to="/hand-rolls">
-                                <button>Hand Rolls</button>
+                                <button className="subNav">Hand Rolls</button>
                             </Link>
                         </div>
                         <div className="menu">

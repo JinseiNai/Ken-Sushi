@@ -20,13 +20,13 @@ class StartersPage extends React.Component {
                         <div>
                             <p>STARTERS</p>
                             <Link to="/starters">
-                                <button>Salad/Soups</button>
+                                <button className="subNav">Salad/Soups</button>
                             </Link>
                             <Link to="/appetizers">
-                                <button>Appetizers</button>
+                                <button className="subNav">Appetizers</button>
                             </Link>
                             <Link to="tapas">
-                                <button>Tapas</button>
+                                <button className="subNav">Tapas</button>
                             </Link>
                         </div>
                         <div className="menu">
