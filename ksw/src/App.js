@@ -2,10 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import Homepage from './components/homepage/homepage';
-import StartersPage from './components/menu/pages/starters';
+// import StartersPage from './components/menu/pages/starters';
 import EntreesPage from './components/menu/pages/entrees';
 import RollsPage from './components/menu/pages/rolls';
 import SushiList from './components/menu/pages/sushi-list';
+import Starters from './components/menu/starters';
+import Appetizers from './components/menu/appetizers';
+import Tapas from './components/menu/tapas';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,11 +32,22 @@ class App extends React.Component {
                   <h1>Ken Sushi Workshop</h1>
                 </Link>
               </div>
-              <div onMouseOver={this.openNav} className="hoverNav">
+              <div>
                 <div className="nav" id="nav">
-                    <Link to="/starters">
-                      <button>Starters</button>
-                    </Link>
+                    {/* <Link to="/starters"> */}
+                      <button className="dropdown-starter">Starters</button>
+                    {/* </Link> */}
+                      <div className="starter-container">
+                        <Link to="/starters">
+                          <button>Salad/Soups</button>
+                        </Link>
+                        <Link to="/appetizers">
+                          <button>Appetizers</button>
+                        </Link>
+                        <Link to="/tapas">
+                          <button>Tapas</button>
+                        </Link>
+                      </div>
                     <Link to="/entrees">
                       <button>Entrees</button>
                     </Link>
@@ -48,10 +62,13 @@ class App extends React.Component {
             </div>
             <div className="content">
               <Route exact path="/" component={Homepage} />
-              <Route path="/starters" component={StartersPage} />
+              {/* <Route path="/starters" component={StartersPage} /> */}
               <Route path="/entrees" component={EntreesPage} />
               <Route path="/rolls" component={RollsPage} />
               <Route path="/sushi" component={SushiList} />
+              <Route path="/starters" component={Starters} />
+              <Route path="/appetizers" component={Appetizers} />
+              <Route path="/tapas" component={Tapas} />
             </div>
           </div>
         </Switch>

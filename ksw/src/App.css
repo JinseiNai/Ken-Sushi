@@ -28,22 +28,14 @@
 }
 
 /* Navigation Buttons */
-.hoverNav {
-  position:fixed;
-  left: 0;
-  z-index: 1;
-  background-color: blue;
-  height: 166px;
-  width: 100px;
-}
 
 .nav {
   position: fixed;
-  left: -10px;
+  left: 0px;
   z-index: 1;
   overflow-x: hidden;
   transition: 0.5s;
-  /* display: none; */
+  background-color: white;
 }
 
 .nav a {
@@ -56,17 +48,14 @@
   text-align: right;
   font-size: 14px;
   font-weight: bolder;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   padding-right: 10px;
-  background-color: rgb(214, 63, 63);
-  border: 2px solid white;
+  /* background-color: rgb(214, 63, 63); */
+  border: none;
 }
 
-/* ------------------ */
-
-/* Sub Navigation Buttons */
-.subNav {
-  background-color: white;
+.starter-container {
+  display: none;
 }
 
 /* ------------------ */
