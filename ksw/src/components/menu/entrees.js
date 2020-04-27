@@ -39,11 +39,9 @@ class Entrees extends React.Component {
     render() {
         return (
             <div>
-                <p>ENTREES</p>
-                <i className="item-description">*served with miso soup</i>
                 {this.state.entrees.map(item => (
                     <>
-                    <p className="item-name">{item.name} <span className="space">&nbsp;</span> {item.price}</p>
+                    <p className="item-name">{item.name} <span className="price">{item.price}</span></p>
                     <i className="item-description">{item.description}</i>
                     </>
                 ))}

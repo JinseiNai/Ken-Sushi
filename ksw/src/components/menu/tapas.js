@@ -59,11 +59,13 @@ class Tapas extends React.Component {
 
     render() {
         return (
-            <div>
-                <h5>SPECIAL TAPAS</h5>
+            <div className="container">
+                <div className="menu-title">
+                    <p>TAPAS</p>
+                </div>
                 {this.state.tapas.map(item => (
                     <>
-                    <p className="item-name">{item.name} <span className="space">&nbsp;</span> {item.price}</p>
+                    <p className="item-name">{item.name} <span className="price">{item.price}</span></p>
                     <i className="item-description">{item.description}</i>
                     </>
                 ))}

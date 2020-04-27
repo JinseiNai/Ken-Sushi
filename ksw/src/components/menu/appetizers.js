@@ -40,10 +40,12 @@ class Appetizers extends React.Component {
     render() {
         return (
             <div>
-                <h5>Appetizers</h5>
+                <div className="menu-title">
+                    <p>APPETIZERS</p>
+                </div>
                 {this.state.appetizers.map(item => (
                     <>
-                    <p className="item-name">{item.name} <span className="space">&nbsp;</span>{item.price}</p>
+                    <p className="item-name">{item.name} <span className="price">{item.price}</span></p>
                     <i className="item-description">{item.description}</i>
                     </>
                 ))}

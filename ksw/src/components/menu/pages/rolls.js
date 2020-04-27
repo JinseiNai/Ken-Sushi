@@ -11,7 +11,10 @@ class RollsPage extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
+                <div className="menu-title">
+                    <p>SPECIALTY ROLLS</p>
+                </div>
                 <Rolls></Rolls>
             </div>
         )

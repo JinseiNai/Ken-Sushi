@@ -18,11 +18,9 @@ class Omakase extends React.Component {
     render() {
         return(
             <div>
-                <p>OMAKASE</p>
-                <i className="item-description">"entrust" our chefs with a unique dining experience</i>
                 {this.state.omakase.map(item => (
                     <>
-                    <p className="item-name">{item.name} <span className="space">&nbsp;</span> {item.price}</p>
+                    <p className="item-name">{item.name} <span className="price">{item.price}</span></p>
                     {/* <i className="item-description">{item.price}</i> */}
                     </>
                 ))}

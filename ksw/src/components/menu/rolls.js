@@ -54,10 +54,9 @@ class Rolls extends React.Component {
     render() {
         return (
             <div>
-                <h5>SPECIALTY ROLLS</h5>
                 {this.state.rolls.map(item => (
                     <>
-                    <p className="item-name">{item.name} <span className="space">&nbsp;</span>{item.price}</p>
+                    <p className="item-name">{item.name} <span className="price">{item.price}</span></p>
                     <i className="item-description">{item.description}</i>
                     </>
                 ))}

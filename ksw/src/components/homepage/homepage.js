@@ -3,7 +3,7 @@ import './homepage.css';
 
 function Homepage() {
     return (
-        <div className="container">
+        <div className="container" id="restaurant-info">
             <div className="address-block">
                 <p className="address">11375 El Camino Real</p>
                 <p className="address">San Diego, CA 92130</p>

@@ -111,7 +111,7 @@ class Sushi extends React.Component {
     render() {
         return (
             <div>
-                <h6>SUSHI</h6>
+                <h6>NIGIRI</h6>
                 {this.state.sushi.map(item => (
                     <div className="sushi-menu">
                         <p className="left">{item.name}</p>

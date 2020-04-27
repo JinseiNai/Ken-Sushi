@@ -12,8 +12,16 @@ class EntreesPage extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
+                <div className="menu-title">
+                    <p>ENTREES</p>
+                    <em className="item-description">*served with miso soup</em>
+                </div>
                 <Entrees></Entrees>
+                <div className="menu-title">
+                    <p>OMAKASE</p>
+                    <em className="item-description">"entrust" our chefs with a unique dining experience</em>
+                </div>
                 <Omakase></Omakase>
             </div>
         )
