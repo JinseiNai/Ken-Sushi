@@ -21,7 +21,7 @@ class SushiList extends React.Component {
                     <div className="container">
                         <div className="menu-title">
                             <p>SUSHI</p>
-                            <nav class="nav nav-pills flex-column flex-sm-row">
+                            {/* <nav class="nav nav-pills flex-column flex-sm-row">
                                 <Link to="/sushi">
                                     <a class="flex-sm-fill text-sm-center nav-link" href="#">Nigiri</a>
                                 </Link>
@@ -37,7 +37,7 @@ class SushiList extends React.Component {
                                 <Link to="/hand-rolls">
                                     <a class="flex-sm-fill text-sm-center nav-link" href="#">Hand Rolls</a>
                                 </Link>
-                            </nav>
+                            </nav> */}
                         </div>
                         <div className="menu">
                             <Route path="/sashimi" component={Sashimi} />
